@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import com.seeun.salt.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity :AppCompatActivity(){
     private lateinit var binding: ActivityMainBinding
@@ -20,8 +21,9 @@ class MainActivity :AppCompatActivity(){
         binding.calendarCustom.apply {
             layoutManager = monthListManager
             adapter = monthListAdapter
+            scrollToPosition(Int.MAX_VALUE/2)
         }
-        //val snap = PagerSnapHelper()
-        //snap.attachToRecyclerView(calendar_custom)
+        val snap = PagerSnapHelper()
+        snap.attachToRecyclerView(calendar_custom)
     }
 }
