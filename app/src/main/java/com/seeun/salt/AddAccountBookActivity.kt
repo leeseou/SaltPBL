@@ -52,5 +52,9 @@ class AddAccountBookActivity : AppCompatActivity() {
         daytext.setText(day)
         //datepicker이 textView 터치하면 팝업 형식으로 나오도록!
 
+
+
+
+
     }
 }
