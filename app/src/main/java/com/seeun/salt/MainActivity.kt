@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val goAccountButton = findViewById<Button>(R.id.goAccountButton)
         goAccountButton.setOnClickListener {
-            val intent = Intent(this, AddAccountBookActivity::class.java)
+            val intent = Intent(this, LoginnActivity::class.java)
             startActivity(intent)
         }
     }
