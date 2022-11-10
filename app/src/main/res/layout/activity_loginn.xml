@@ -6,33 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".LoginnActivity">
 
-        <EditText
-            android:id="@+id/Etext_pw"
-            android:layout_width="290dp"
-            android:layout_height="50dp"
-            android:background="@drawable/edittext_round_corner_erctangle"
-            android:hint="    비밀번호"
-            android:textColor="#CCCCCC"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.391" />
 
-        <EditText
-            android:id="@+id/Etext_id"
-            android:layout_width="290dp"
-            android:layout_height="50dp"
-            android:background="@drawable/edittext_round_corner_erctangle"
-            android:hint="     아이디"
-            android:textColor="#CCCCCC"
-            app:layout_constraintBottom_toTopOf="@+id/Etext_pw"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.945" />
+    <ImageView
+        android:id="@+id/frame_id"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+
+        android:src='@drawable/frame_831'
+        app:layout_constraintBottom_toTopOf="@+id/naver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+    <EditText
+        android:id="@+id/Etext_id"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_round_corner_erctangle"
+        android:hint="     아이디"
+        android:textColor="#CCCCCC"
+        app:layout_constraintBottom_toTopOf="@+id/Etext_pw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <EditText
+        android:id="@+id/Etext_pw"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_round_corner_erctangle"
+        android:hint="    비밀번호"
+        android:textColor="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
 
     <TextView
         android:id="@+id/text_autologin"
@@ -86,20 +101,9 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Etext_pw"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="113dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="193dp"
-        android:layout_marginBottom="260dp"
-        android:text="SNS 계정 로그인"
-        android:textColor="#252525"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_autologin" />
+
 
     <ImageView
         android:id="@+id/kakao"
