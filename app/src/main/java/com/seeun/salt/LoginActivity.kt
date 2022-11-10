@@ -5,6 +5,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
@@ -49,6 +50,17 @@ class LoginActivity : AppCompatActivity(){
             val intent = Intent(this, register::class.java)
             startActivity(intent)
         }
+
+        //아이디 찾기 버튼
+        text_findID.setOnClickListener {
+            Toast.makeText(this, "아이디 찾기", Toast.LENGTH_SHORT).show()
+        }
+
+        //비밀번호 찾기 버튼
+        text_findPW.setOnClickListener {
+            Toast.makeText(this, "비밀번호 찾기", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     //다이얼로그 메소드
