@@ -7,16 +7,16 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.login.*
+import kotlinx.android.synthetic.main.activity_login.*
 
-class login : AppCompatActivity(){
+class LoginActivity : AppCompatActivity(){
 
     //로그인&회원가입
     val TAG: String = "login"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.activity_login)
 
         //로그인 버튼
         btn_login.setOnClickListener {
