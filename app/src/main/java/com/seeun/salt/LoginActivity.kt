@@ -8,13 +8,9 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_login.*
+import android.os.Bundle
 
-class LoginActivity : AppCompatActivity(){
-
-    //로그인&회원가입
-    val TAG: String = "login"
-
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -60,30 +56,5 @@ class LoginActivity : AppCompatActivity(){
         text_findPW.setOnClickListener {
             Toast.makeText(this, "비밀번호 찾기", Toast.LENGTH_SHORT).show()
         }
-
     }
-
-    //다이얼로그 메소드
-    private fun dialog(type: String) {
-        var dialog = AlertDialog.Builder(this)
-
-        if(type.equals("success")){
-            dialog.setTitle("로그인 성공")
-            dialog.setMessage("로그인 성공")
-        } else if(type.equals("fail")){
-            dialog.setTitle("로그인 실패")
-            dialog.setMessage("아이디와 비밀번호를 확인해주세요")
-        }
-
-        var dialog_listenr = object: DialogInterface.OnClickListener{
-            override fun onClick(dialog: DialogInterface?, which: Int) {
-                when(which){
-                    DialogInterface.BUTTON_POSITIVE -> Log.d(TAG, "")
-                }
-            }
-        }
-        dialog.setPositiveButton("확인", dialog_listenr)
-        dialog.show()
-    }
-
 }

@@ -1,26 +1,19 @@
 package com.seeun.salt
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.PagerSnapHelper
-import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity :AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    //달력
-        val monthListManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        val monthListAdapter = AdapterMonthActivity()
 
-        calendar_custom.apply {
-            layoutManager = monthListManager
-            adapter = monthListAdapter
-            scrollToPosition(Int.MAX_VALUE/2)
+        val goAccountButton = findViewById<Button>(R.id.goAccountButton)
+        goAccountButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
-
-        val snap = PagerSnapHelper()
-        snap.attachToRecyclerView(calendar_custom)
     }
 }

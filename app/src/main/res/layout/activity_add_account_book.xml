@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAccountBookActivity">
+
+    <Button
+        android:id="@+id/consumtionButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="지출" />
+
+    <Button
+        android:id="@+id/incomeButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/consumtionButton"
+        android:text="소득" />
+
+    <Button
+        android:id="@+id/transferButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/incomeButton"
+        android:text="이체" />
+
+    <TextView
+        android:id="@+id/dayText"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/consumtionButton"
+        android:layout_alignLeft="@+id/consumtionButton"
+        android:text="날짜" />
+
+    <TextView
+        android:id="@+id/amountText"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/dayText"
+        android:layout_alignLeft="@+id/consumtionButton"
+        android:text="금액" />
+
+    <Button
+        android:id="@+id/categoryButton"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/amountText"
+        android:layout_alignLeft="@+id/consumtionButton"
+        android:text="카테고리" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_below="@+id/amountText"
+        android:layout_alignLeft="@+id/consumtionButton"
+        android:text="확인" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amountText"
+        android:layout_alignRight="@+id/transferButton"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="470dp"
+        android:layout_toRightOf="@+id/okButton"
+        android:text="취소" />
+
+
+</RelativeLayout>
+
+
