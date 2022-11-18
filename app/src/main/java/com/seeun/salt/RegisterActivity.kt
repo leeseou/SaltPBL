@@ -8,14 +8,14 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.register.*
+import kotlinx.android.synthetic.main.activity_register.*
 
-class register : AppCompatActivity(){
+class RegisterActivity : AppCompatActivity(){
     val TAG: String = "Register"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.register)
+        setContentView(R.layout.activity_register)
 
         btn_register2.setOnClickListener {
             Log.d(TAG, "회원가입 버튼 클릭")
