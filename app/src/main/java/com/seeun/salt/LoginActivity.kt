@@ -8,7 +8,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
             //유저가 입력한 id, pw 값과 쉐어드로 불러온 id, pw값 비교
             if(id == savedId && pw == savedPw) {
                 //로그인 성공 다이얼로그
-                dialog("success")
+                //dialog("success")
 
                 //가계부화면으로 이동
                 val intent = Intent(this, MainActivity::class.java)
@@ -37,7 +37,8 @@ class LoginActivity : AppCompatActivity() {
 
             } else {
                 //로그인 실패 다이얼로그
-                dialog("fail")
+
+                //dialog("fail")
             }
         }
 
